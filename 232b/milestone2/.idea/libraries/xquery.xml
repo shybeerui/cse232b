@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xquery">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/xqueryjar/xquery.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
