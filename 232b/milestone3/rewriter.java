@@ -230,7 +230,7 @@ public class rewriter {
                 }
             }
             //print return
-            tuples = "<tuple> "+tuples+" </tuple>,";
+            tuples = "<tuple> {"+tuples+"} </tuple>,";
             output += "                  return " + tuples + "\n";
 //            System.out.println("                  return " + tuples);
 
@@ -251,7 +251,10 @@ public class rewriter {
                 output = PrintJoinCond(ret0, ret1, output);
                 if(output == "")
                     return "";
-                output += ")\n";
+                if(i != classify.size() - 1)
+                    output += "),\n";
+                else
+                    output += ")\n";
 //                System.out.println(")");
             }
         }
